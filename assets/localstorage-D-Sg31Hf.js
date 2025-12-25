@@ -1,0 +1,1 @@
+const a=({key:r,value:t,ttl:e=36e5})=>{const o={value:t,expired:Date.now()+e};localStorage.setItem(r,JSON.stringify(o))},l=r=>{const t=localStorage.getItem(r);if(!t)return null;try{const e=JSON.parse(t);return Date.now()>e.expired?(localStorage.removeItem(r),null):e.value}catch(e){return console.error("Error parsing localStorage item",e),null}};export{l as g,a as s};
