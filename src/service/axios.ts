@@ -4,7 +4,7 @@ import type { params } from "../interface/endpointsInterface";
 export const AxiosBase = axios.create({
   baseURL: "https://api.apbugall.org",
   timeout: 10000,
-  params: { token: "04941a9a3ca3ac16e2b4327347bbc1" },
+  params: { token: "45e20a5f584becf7a64dffb7174ddf" },
 });
 
 export const getMovies = async <T>({
